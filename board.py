@@ -3,7 +3,7 @@
 from constants import PLAYER, AI, EMPTY, ROWS, COLS
 
 class Board:
-    def _init_(self):
+    def __init__(self):
         self.board = [[EMPTY for _ in range(COLS)] for _ in range(ROWS)]
 
     def make_move(self, col, piece):
